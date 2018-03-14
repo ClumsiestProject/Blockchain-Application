@@ -1,0 +1,10 @@
+Based on the Information Asset of Clumsiest Information Inc., the Blockchain technology 
+is used to develop the daily application.
+
+      1. Start to version 0.1.0
+      2. Update Date : 2018/03/14
+
+
+
+                                    Using MIT Open Source protocol
+                                    ©2018 Clumsiest Information Inc.    
