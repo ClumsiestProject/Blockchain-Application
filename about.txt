@@ -6,5 +6,5 @@ is used to develop the daily application.
 
 
 
-                                    Using MIT Open Source protocol
-                                    ©2018 Clumsiest Information Inc.    
+                                    License using MIT Open Source protocol
+                                       ©2018 Clumsiest Information Inc.    
