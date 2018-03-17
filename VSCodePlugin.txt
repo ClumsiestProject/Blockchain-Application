@@ -1,0 +1,20 @@
+Visual Studio Code Ver 1.21.1
+Inatalled Plug-in List
+
+    1. Auto Close Tag
+    2. Babel ES6/ES7
+    3. Beautify
+    4. Debugger for Chrome
+    5. filesize
+    6. JavaScript(ES6) Code Snippests
+    7. jshint
+    8. minify
+    9. open in browser
+    10. Path Intellisense
+    11. Regex Previewer
+    12. vscode-faker
+    13. vscode-fileheader
+    14. webpack
+
+
+                      List Updated Date: 2018/03/17 17:22
