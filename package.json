@@ -1,0 +1,30 @@
+{
+  "name": "blockchain-application",
+  "version": "1.0.0",
+  "description": "Based on the Information Asset of Clumsiest Information Inc., the Blockchain technology ",
+  "main": "app.js",
+  "dependencies": {
+    "eslint": "^4.19.0"
+  },
+  "devDependencies": {
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.9.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ClumsiestProject/Blockchain-Application.git"
+  },
+  "keywords": [
+    "Blockchain",
+    "Application"
+  ],
+  "author": "Jeephy Ji",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ClumsiestProject/Blockchain-Application/issues"
+  },
+  "homepage": "https://github.com/ClumsiestProject/Blockchain-Application#readme"
+}

@@ -1,5 +1,5 @@
 Visual Studio Code Ver 1.21.1
-Inatalled Plug-in List
+Installed Plug-in List
 
     1. Auto Close Tag
     2. Babel ES6/ES7
