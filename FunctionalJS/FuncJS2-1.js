@@ -1,1 +1,1 @@
- () => "Simple Function";
+const simpleFn () => "Simple Function";
