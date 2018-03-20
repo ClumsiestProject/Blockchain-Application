@@ -17,7 +17,12 @@ Installed Plug-in List
     14. webpack
     15. Debugger for Firefox
     16. npm
+<<<<<<< HEAD
     17. VSCode Great Icons
+=======
+    17. npm Intellisense
+    18. VSCode Great Icons
+>>>>>>> eb69fe9f9c99818cd2ecf158838a6f5c0d4ea235
 
 
                       List Updated Date: 2018/03/17 17:22
