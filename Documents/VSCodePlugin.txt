@@ -5,20 +5,21 @@ Installed Plug-in List
     2. Babel ES6/ES7
     3. Beautify
     4. Debugger for Chrome
-    5. filesize
-    6. JavaScript(ES6) Code Snippests
-    7. ESLint
-    8. minify
-    9. open in browser
-    10. Path Intellisense
-    11. Regex Previewer
-    12. vscode-faker
-    13. vscode-fileheader
-    14. webpack
-    15. Debugger for Firefox
-    16. npm
-    17. npm Intellisense
-    18. VSCode Great Icons
+    5. Debugger for Firefox
+    6. ESLint
+    7. filesize
+    8. JavaScript(ES6) Code Snippests
+    9. minify
+    10. npm
+    11. npm Intellisense
+    12. open in browser
+    13. Path Intellisense
+    14. Regex Previewer
+    15. VSCode Great Icons
+    16. vscode-faker
+    17. vscode-fileheader
+    18. vscode-pdf
+    19. webpack
 
 
                       List Updated Date: 2018/03/17 17:22
