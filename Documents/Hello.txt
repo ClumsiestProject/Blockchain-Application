@@ -1,7 +1,7 @@
 Hello, Blockchain Application!
 
     从2018年3月14日开始，我们开始基于Clumsiest Information Inc.的
-信息资产，运用区块链技术，开发日常应用。
+自主信息资产，运用区块链技术，开发日常应用。
 
     Regards
                               Jeephy Ji   2018/03/14  12:59

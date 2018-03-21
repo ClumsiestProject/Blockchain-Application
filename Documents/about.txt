@@ -1,4 +1,4 @@
-Based on the Information Asset of Clumsiest Information Inc., the Blockchain technology 
+Based on the Autonomous Information Asset of Clumsiest Information Inc., the Blockchain technology 
 is used to develop the daily application.
 
       1. Start to version 0.1.0
