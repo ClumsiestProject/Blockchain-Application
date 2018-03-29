@@ -4,4 +4,4 @@ const forEach = (array,fn) => {
         fn(array[i])
 };
 
-export default forEach;
+export default forEach
