@@ -1,0 +1,56 @@
+Ubuntu Server下无线Wifi的配置
+
+    我们很多时候会碰到在VMWare虚拟机上安装Ubuntu Server的情况，
+同时，网络环境又只有Wifi条件。这时，因为网络连不上，就什么招也
+没有了。
+    幸运的是，查了许多网上的办法都一筹莫展时，看到了下面的这篇短
+文章，一试下来，Wifi连上啦！
+    真心地感谢文章作者，虽然作者是佚名的，但相信他（她）能听到
+祝福！
+
+    《Ubuntu 通过无线网络安装Ubuntu Server启动系统后连接无线网络的方法》
+
+    最近有朋友说Ubuntu系统有个不人性化的地方，安装过程中选择无线网卡，即使用无线网络安装，
+系统安装完成重启后并不会自动启动无线网卡并连接安装时选择的Wi-Fi网络。下面小编给大家介绍下
+Ubuntu 通过无线网络安装Ubuntu Server启动系统后连接无线网络的方法，一起看看：
+
+    接触Ubuntu系统不久，发现无线网络环境下安装Ubuntu Server一个不太人性化的设计：在安装
+过程中选择无线网卡，即使用无线网络安装（此时需要选择Wi-Fi网络并输入密码），但系统安装完成
+重启后并不会自动启动无线网卡并连接安装时选择的Wi-Fi网络。这个设计对于不便使用有线网络的
+Linux菜鸟而言，会带来极大的烦恼...
+　　因无法连接网络安装图形界面或Network-Manager等应用，也尝试了使用ifconfig和iwconfig等
+命令，但是发现iwconfig命令只支持WEP加密的Wi-Fi网络，不支持WPA-PSK加密方式。最终，通过
+/etc/network/interfaces配置无线网卡的方式成功连接WPA-PSK加密的Wi-Fi网络，具体方法如下：
+
+    1、动态获取的方式连接Wi-Fi网络
+        （Wifi是WPA-PSK加密时）
+        1   auto wlan0
+        2   iface wlan0 inet dhcp 
+        3       wpa-essid Wi-Fi名称
+        4       wpa-psk Wi-Fi密码
+
+        （Wifi是WEP加密时）
+        1   auto wlan0
+        2   iface wlan0 inet dhcp 
+        3       wireless-essid Wi-Fi名称
+        4       wireless-key Wi-Fi密码
+
+    2、静态地址的方式连接Wi-Fi网络
+        （Wifi是WPA-PSK加密时）
+        1   auto wlan0
+        2   iface wlan0 inet static
+        3       address 192.168.1.x 
+        4       netmask 255.255.255.0
+        5       gateway 192.168.1.1
+        6       wpa-essid Wi-Fi名称
+        7       wpa-psk Wi-Fi密码
+
+    (注意：无线网卡“wlan0”是通过iwconfig命令查询到的无线网卡名称，可能会有所不同)
+
+    通过以上设置，即可实现开机后自动启动无线网卡并连接通过WPA-PSK方式加密的Wi-Fi网络！
+    以上所述是小编给大家介绍的Ubuntu 通过无线网络安装Ubuntu Server启动系统后连接无线
+网络的方法，希望对大家有所帮助，如果大家有任何疑问请给我留言，小编会及时回复大家的。在此
+也非常感谢大家对脚本之家网站的支持！
+
+
+                                   Jeephy Ji   2018/04/03 15:55
