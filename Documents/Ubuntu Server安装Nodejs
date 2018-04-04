@@ -1,0 +1,39 @@
+ubuntu安装nodejs
+
+    方法1：
+        1    curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+        2    sudo apt-get install -y nodejs
+
+        如果安装nodejs 9.x版本
+        1    curl -sL https://deb.nodesource.com/setup_9.x | sudo -E bash -
+        2    sudo apt-get install -y nodejs
+
+    方法2：
+        下载nodejs压缩文件、解压、切换并查看当前Node.js所在目录
+        1    wget https://nodejs.org/dist/v8.1.0/node-v8.1.0-linux-x64.tar.xz
+        2    tar -xvf node-v8.1.0-linux-x64.tar.xz
+        3    cd node-v8.1.0-linux-x64/bin
+        4    pwd
+        查看Node.js版本，并将Node.js和npm设置为全局可访问
+        5    ./node -v
+        6    ./npm -v
+        7    sudo ln /home/ubuntu/node-v8.11.1-linux-x64/bin/node /usr/local/bin/node
+        8    sudo ln /home/ubuntu/node-v8.11.1-linux-x64/bin/npm /usr/local/bin/npm
+        9    pwd
+
+    方法3：
+        也可以使用ubuntu自带apt-get安装,安装后使用node -v查看版本
+        1    sudo apt-get install nodejs-legacy nodejs
+        2    sudo apt-get install npm
+        3    node -v
+        4    npm -v
+
+    安装完成
+        推荐使用方法一，直接安装在系统环境/usr/bin目录下，之后使用npm -g安装其他插件也会安装到
+    /usr/lib/node_modules(需要使用sudo权限)。
+        如果使用方法二，将nodejs路径链接到/usr/local/bin目录下，则每次npm -g安装插件都会安装
+    在nodejs原路径下的node_modules(比如/home/ubuntu/node-v8.1.0-linux-x64/lib/node_modules)，
+    每次代码中引用插件也需要到此目录下去找。
+
+
+                              Jeephy Ji   2018/04/03   16:45

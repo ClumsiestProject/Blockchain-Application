@@ -1,0 +1,57 @@
+在Ubuntu Server 16.04 LTS 上安装MongoDB，可以参考MongoDB的官方文档：
+https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/
+
+    Install MongoDB Community Edition
+    在没有确定性的需求之前，项目使用MongoDB的社区版；如确有必要再升级到企业版
+
+        MongoDB only provides packages for 64-bit LTS (long-term support) 
+    Ubuntu releases. For example, 12.04 LTS (precise), 14.04 LTS (trusty), 
+    16.04 LTS (xenial), and so on. These packages may work with other 
+    Ubuntu releases, however, they are not supported.
+
+    1. 用包管理工具导入MongoDB的公匙：
+        sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv
+         2930ADAE8CAF5059EE73BB4B58712A2291FA4AD5
+    2. 为MongoDB创建列表文件及目录:
+        echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu 
+        xenial/mongodb-org/3.6 multiverse" | sudo tee /etc/apt/sources.list.d
+        /mongodb-org-3.6.list
+    3. 重载本地的包管理数据库：
+        sudo apt-get update
+    4. 安装MongoDB的最新稳定版：
+        sudo apt-get install -y mongodb-org
+
+        保持网络畅通，等待安装完毕后，就可以运行MongoDB了。
+        注意：The MongoDB instance stores its data files in /var/lib/mongodb 
+    and its log files in /var/log/mongodb by default, and runs using the mongodb
+    user account. You can specify alternate log and data file directories in 
+    /etc/mongod.conf. See systemLog.path and storage.dbPath for additional 
+    information.
+        If you change the user that runs the MongoDB process, you must modify 
+    the access control rights to the /var/lib/mongodb and /var/log/mongodb 
+    directories to give this user access to these directories.
+        关键是MongoDB的数据存放和日志存放目录，缺省情况是在/var/lib/mongodb 和
+    /var/log/mongodb中，一般我们都使用缺省设置。
+
+    您还必须拥有数据和日志的访问权力时，您才可以使用MongoDB。常用的使用方法有：
+    1. 启动MongoDB服务：
+        sudo service mongod start
+    2. 检查服务启动是否正常：
+        您可以打开/var/log/mongodb/mongod.log日志文件，查看是否有像下面这样的日志
+    内容： [initandlisten] waiting for connections on port 27017
+        如果有，就说明MongoDB已经正常启动了，27017是服务缺省绑定的端口号。
+    3. 停止MongoDB服务：
+        sudo service mongod stop
+    4. 重启MongoDB服务：
+        sudo service mongod restart
+    5. 开始操作MongoDB:
+        您可以使用mongo Shell的命令，访问缺省绑定地址为127.0.0.1的主机，端口前面提到
+    的缺省是270117： mongo --host 127.0.0.1:27017
+        这样就会进入带有“ > ”提示符的命令行终端模式，执行各种Shell命令。退出这种模式可
+    以使用“ exit ”命令，或者使用Control+C热键。
+
+
+
+
+
+                                      Jeephy Ji    2018/04/03  20:36
