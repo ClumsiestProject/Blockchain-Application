@@ -9,6 +9,6 @@ var a = 'Hello Blockchain World! http://lorempixel.com/640/480/people 265-042-32
 console.log(a);
 
 var b = function(){
-     return a;
+    return a;
 };
-console.log(a);
+console.log(b);
