@@ -4,10 +4,10 @@
   "description": "Based on the Information Asset of Clumsiest Information Inc., the Blockchain technology ",
   "main": "app.js",
   "dependencies": {
-    "eslint": "^4.19.0"
+    "eslint": "^4.19.0",
+    "koa": "^2.5.0"
   },
   "devDependencies": {
-    "eslint-config-airbnb-base": "^12.1.0",
     "eslint-config-standard": "^11.0.0",
     "eslint-plugin-import": "^2.10.0",
     "eslint-plugin-node": "^6.0.1",

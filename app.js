@@ -1,14 +1,9 @@
-/*
- * @Author: Jeephy Ji 
- * @Date: 2018-03-17 16:09:31 
- * @Last Modified by: Jeephy Ji
- * @Last Modified time: 2018-03-20 15:42:23
- */
+const Koa = require('koa');
+const app = new Koa();
 
-var a = 'Hello Blockchain World! http://lorempixel.com/640/480/people 265-042-3259 ';
-console.log(a);
+app.use(async ctx => {
+  ctx.body = 'Hello World';
+});
 
-var b = function(){
-    return a;
-};
-console.log(b);
+console.log( 'Koa.js Server in 127.0.0.1:3000    ')
+app.listen(3000);

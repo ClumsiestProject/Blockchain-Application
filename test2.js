@@ -30,5 +30,3 @@ console.log( 0.1 + 0.2 === 0.3 );   //这样肯定是"false"
 var m = 420.7 + 5.08;
 console.log( n === m );
 console.log( "n = ", n, "    m = ", m);
-
-
