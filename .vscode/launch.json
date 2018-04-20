@@ -9,7 +9,7 @@
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
-            "program": "${workspaceFolder}/test.js"
+            "program": "${workspaceFolder}/test3.js"
         },
         {
             "type": "chrome",
