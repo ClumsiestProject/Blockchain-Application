@@ -50,5 +50,6 @@ const forEachObject = (obj, fn) => {
 }
 let object = { a:1, b:2 };
 forEachObject( object, ( k, v )  => console.log( k + ":" + v ) );
-// let fn2 = ( k, v )  => console.log( k + ":" + v );
-// forEachObject( object, fn2 );
+/*  其实等价于：
+let fn2 = ( k, v )  => console.log( k + ":" + v );
+forEachObject( object, fn2 );                   */
