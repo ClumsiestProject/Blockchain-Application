@@ -1,4 +1,4 @@
-Visual Studio Code Ver 1.21.1
+Visual Studio Code Ver 1.24.1
 Installed Plug-in List
 
     1. Auto Close Tag
@@ -24,7 +24,10 @@ Installed Plug-in List
     21. vscode-fileheader
     22. vscode-pdf
     23. webpack
+    24. Azure Account
+    25. Azure Cosmos DB
+    26. Docker
    
 
 
-                      List Updated Date: 2018/03/17 17:22
+                      List Updated Date: 2018/06/20 12:39
