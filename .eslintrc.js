@@ -23,7 +23,7 @@ module.exports = {
     },
     "rules": {
         "indent": [ "error", 4 ],                   // 缩进4个空格
-        "linebreak-style": [ "error", "Unix" ],  // 换行是Windows风格,MacOS下改为Unix
+        "linebreak-style": [ "error", "Unix" ],     // 换行是Windows风格,MacOS下改为Unix
         "no-console": "off"                         // 禁用no-console规则
     //    "quotes": [ "error", "single" ],          // 单引号检查
     //    "semi": [ "error", "never" ]              // 分号检查
